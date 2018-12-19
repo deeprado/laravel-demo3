@@ -53,7 +53,14 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
             'strict' => true,
-            'engine' => null,
+            'engine' => env('DB_ENGINE', null),
+            'dump' => [
+                'dump_binary_path' => 'D:\\Serv\\MySQL\\mysql-5.7.23-winx64\\bin', // only the path, so without `mysqldump` or `pg_dump`
+                'excludeTables' => [
+                    'activity_log',
+                    'comments'
+                ]
+            ]
         ],
 
         'pgsql' => [
@@ -68,6 +75,13 @@ return [
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'prefer',
+            'dump' => [
+                'dump_binary_path' => 'D:\\Programs\\PostgreSQL\\9.5\\bin', // only the path, so without `mysqldump` or `pg_dump`
+//                    'excludeTables' => [
+//                        'table_to_exclude_from_backup',
+//                        'another_table_to_exclude'
+//                    ]
+            ]
         ],
 
         'sqlsrv' => [
