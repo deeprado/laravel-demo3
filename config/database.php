@@ -52,7 +52,7 @@ return [
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'prefix_indexes' => true,
-            'strict' => true,
+            'strict' => env('DB_STRICT', true),
             'engine' => env('DB_ENGINE', null),
             'dump' => [
                 'dump_binary_path' => 'D:\\Serv\\MySQL\\mysql-5.7.23-winx64\\bin', // only the path, so without `mysqldump` or `pg_dump`

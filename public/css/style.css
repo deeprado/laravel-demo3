@@ -1,0 +1,282 @@
+﻿html, body, div, span, object, iframe, h1, h2,
+h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn,
+em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption,
+figure, footer, header, hgroup, menu, nav, section, summary, time, mark,
+audio, video, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    outline-style: none; /*FF*/
+}
+
+    ul li {
+        list-style: none;
+    }
+
+body {
+    line-height: 1;
+    font-family: "Microsoft YaHei";
+}
+
+html {
+    font-size: 20px;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+
+.registerBox {
+    width: 85%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.registerBox-title {
+    width: 100%;
+    color: #fff;
+    font-size: 1.3rem;   
+    text-align: center;
+    font-weight: bold;
+}
+
+.registerBox-con {
+    border-radius: 14px;
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 60px;
+    width: calc(100% - 80px);
+    margin: 30px auto;
+}
+
+.registerBox-con-icon {
+    width: 35%;
+    margin: 0px auto;
+}
+
+    .registerBox-con-icon img {
+        width: 100%;
+    }
+
+.registerBox-con-tip {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #358efc;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registerBox-con-code {
+    width: 40%;
+    margin: 30px auto;
+    margin-bottom: 10px;
+}
+
+    .registerBox-con-code img {
+        width: 100%;
+    }
+.register-item {
+    width:100%;
+    position:relative;
+    margin-top:5px;
+}
+.register-item span{
+    display:inline-block;
+    width: 12%;
+    margin-right:12px;
+}
+    .register-item span img {
+        width:100%;
+        vertical-align:middle;
+    }
+    .register-item input {
+        display: inline-block;
+        padding:20px 5px;
+        width: calc(88% - 30px);
+        border-bottom:1px solid #3691fc;
+        font-size:0.6rem;
+    }
+    .register-item a {
+        padding: 6px;
+        color:#4083fc;
+        border:1px solid #4083fc;
+        border-radius:2px;
+        font-size:0.6rem;
+        position:absolute;
+        right:0px;
+        top:14px;
+    }
+.submitBtn {
+    width: 100%;
+    border-radius: 42px;
+    color: #fff;
+    font-size: 0.6rem;
+    letter-spacing: 10px;
+    background: -webkit-linear-gradient(left, #286bf7, #3691fc);
+    background: -o-linear-gradient(right, #286bf7, #3691fc);
+    background: -moz-linear-gradient(right, #286bf7, #3691fc);
+    background: linear-gradient(to right, #286bf7, #3691fc);
+    padding:8px 0px;
+    margin-top:35px;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 25.6px !important;
+    }
+    .registerBox-title {
+        font-size: 1.6rem;
+    }
+    .registerBox {
+        width: 60%;
+    }
+
+    .register-item span img {
+        width: 60%;
+    }
+
+    .registerBox-con {
+        padding: 50px 60px;
+        width: calc(100% - 120px);
+        margin: 60px auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 25.6px !important;
+    }
+
+    .registerBox-title {
+        font-size: 1.5rem;
+    }
+    .registerBox {
+        width: 77%;
+    }
+    .register-item span img {
+        width: 70%;
+    }
+    .registerBox-con {
+        padding: 40px;
+        width: calc(100% - 80px);
+        margin: 50px auto;
+    }
+}
+@media screen and (max-width: 414px) {
+    html {
+        font-size: 22.08px !important;
+    }
+    .registerBox-title {
+        font-size: 1rem;
+    }
+    .registerBox {
+        width: 82%;
+    }
+
+    .register-item span img {
+        width: 100%;
+    }
+
+    .registerBox-con {
+        padding: 40px 35px;
+        width: calc(100% - 70px);
+        margin: 40px auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 21.33333333px !important;
+    }
+
+    .registerBox-title {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 20px !important;
+    }
+    .registerBox {
+        width: 82%;
+    }
+    .registerBox-title {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 360px) {
+    .registerBox {
+        width: 85%;
+    }
+}
+    @media screen and (max-width: 320px) {
+        .registerBox {
+            width: 90%;
+        }
+
+        .registerBox-title {
+            font-size: 0.9rem;
+        }
+        .registerBox-con {
+            padding: 20px 20px 25px 20px;
+            width: calc(100% - 40px);
+            margin: 30px auto;
+        }
+    }
+
+
+
+
+
+    /*@media only screen and (min-width: 375px) {
+        html {
+            font-size: 21.33333333px !important;
+        }
+    }
+
+    @media only screen and (min-width: 400px) {
+        html {
+            font-size: 21.33333333px !important;
+        }
+    }
+
+    @media only screen and (min-width: 414px) {
+        html {
+            font-size: 22.08px !important;
+        }
+    }
+
+    @media only screen and (min-width: 480px) {
+        html {
+            font-size: 25.6px !important;
+        }
+    }*/

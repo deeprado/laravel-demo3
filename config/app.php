@@ -173,7 +173,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Spatie\Backup\BackupServiceProvider::class
+        // 5.5以下兼容
+        Spatie\Backup\BackupServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
 
     ],
 
