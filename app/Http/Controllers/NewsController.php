@@ -40,4 +40,8 @@ class NewsController extends Controller
         $row = News::findOrFail($id);
         return $row;
     }
+
+    public function socket() {
+        return view('news.socket');
+    }
 }

@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/news/socket', 'NewsController@socket')->name('news.socket');
+
 
 Auth::routes();
 
